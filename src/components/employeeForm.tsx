@@ -158,7 +158,7 @@ export default function EmployeeForm({ employee, onSave }: { employee?: Employee
                     <UiDatepicker
                         required
                         textOptions={BIRTH_DATE_TEXT_OPTIONS}
-                        pattern="dd/mm/yyyy"
+                        pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
                         validationMessages={validationMessages}
                         {...{ name: 'birthDate', value: formData?.birthDate }} />
                 </section>
@@ -198,7 +198,7 @@ export default function EmployeeForm({ employee, onSave }: { employee?: Employee
                     <UiDatepicker
                         {...{ name: 'startDate', value: formData?.startDate }}
                         textOptions={START_DATE_TEXT_OPTIONS}
-                        pattern="dd/mm/yyyy" />
+                        pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" />
                 </section>
 
                 <section>

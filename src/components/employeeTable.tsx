@@ -43,7 +43,7 @@ export default function EmployeeTable({ employeeData, onEdit, onDelete }: { empl
 
     return (
         <UiTableManager
-            style={{ maxWidth: "100%", overflow: "auto" }}
+            style={{ overflow: "auto" }}
             data={employeeData}
             headers={employeeHeaders}
             stickyColumns={{ left: 4, right: 1 }}
